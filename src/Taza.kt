@@ -1,2 +1,1 @@
-class Taza {
-}
+class Taza(var color: String = "", var capacidad: Double = 0.0, var cantidad: Double = 0.0)

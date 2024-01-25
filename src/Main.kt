@@ -42,25 +42,25 @@ método para realizar operaciones similares pero con diferentes conjuntos de dat
 
 */
 
-import Taza
-import Cafetera
-
-enum class Color {
+enum class Color{
     BLANCO, NEGRO, GRIS, AZUL, VERDE
 }
 
 fun main() {
 
     //TODO: Crear 3 cafeteras en la Sala, Cocina y Oficina
-
-
+    var cafetera1 = Cafetera("Sala", 1000.0, 0.0)
+    var cafetera2 = Cafetera("Cocina", 750.0, 750.0)
+    var cafetera3 = Cafetera("Oficina", 500.0, 200.0)
 
     //TODO: Crear una lista de 20 tazas con capacidades aleatorias
 
 
     println("**********************************************")
     //TODO: Mostrar por pantalla el contenido de las 3 cafeteras y las tazas.
-
+    println(cafetera1)
+    println(cafetera2)
+    println(cafetera3)
 
     println("**********************************************")
     println("Llenar la cafetera1 de café...")
@@ -72,16 +72,20 @@ fun main() {
 
 
     //TODO: Vaciar la cafetera2.
-
+    cafetera2.vaciar()
 
     //TODO: Agregar café a la cafetera2 a la mitad de su capacidad.
-
+    cafetera2.agregarCafe(375.0)
 
     //TODO: Agregar 400 c.c. de café a la cafereta3
+    cafetera3.agregarCafe(400.0)
 
 
     println("**********************************************")
     //TODO: Mostrar por pantalla el contenido de las 3 cafeteras
+    println(cafetera1)
+    println(cafetera2)
+    println(cafetera3)
 
 
     println("**********************************************")
@@ -92,3 +96,8 @@ fun main() {
 
     println("**********************************************")
     //TODO: Mostrar por pantalla el contenido de las 3 cafeteras y las tazas.
+    println(cafetera1)
+    println(cafetera2)
+    println(cafetera3)
+
+}
