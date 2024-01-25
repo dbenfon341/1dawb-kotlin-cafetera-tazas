@@ -49,9 +49,9 @@ enum class Color{
 fun main() {
 
     //TODO: Crear 3 cafeteras en la Sala, Cocina y Oficina
-    var cafetera1 = Cafetera("Sala", 1000.0, 0.0)
+    var cafetera1 = Cafetera("Sala", 1000.0)
     var cafetera2 = Cafetera("Cocina", 750.0, 750.0)
-    var cafetera3 = Cafetera("Oficina", 500.0, 200.0)
+    var cafetera3 = Cafetera("Oficina", capacidad = 500.0, cantidad = 200.0)
 
     //TODO: Crear una lista de 20 tazas con capacidades aleatorias
 

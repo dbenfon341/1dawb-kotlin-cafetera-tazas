@@ -23,10 +23,10 @@ class Cafetera() {
     }
 
     // Constructor secundario con la ubicacion, la capacidad máxima y la cantidad actual. Si la cantidad actual es mayor que la capacidad máxima de la cafetera, la ajustará al máximo.
-    constructor(ubicacion: String, capacidad: Double, cantidad: Double) : this() {
+    constructor(ubicacion: String, cantidad: Double, capacidad: Double) : this() {
         this.ubicacion = ubicacion
-        this.capacidad = capacidad
         this.cantidad = if (cantidad > capacidad) capacidad else cantidad
+        this.capacidad = capacidad
     }
 
     /**
